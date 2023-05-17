@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.information {
+    width: 80%;
+    margin: 10px auto 20px auto;
+}
+
+.information h1 {
+    width:100%;
+    font-family: 'PT Serif', serif;
+}
+
+.info h3 {
+    font-size: 12px;
+}
+
+.info p {
+    font-size: 12px;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profiles {
+    width: 310px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-column-gap: 50px;
+}
+
+.profiles img {
+    width: 80%;
+    height: auto;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+figure p {
+    position: absolute;
+    text-transform: uppercase;
+    width: 130px;
+    height: 10px;
+    z-index: 100;
+    font-size: 9px;
+    top: 60px;
+    left: 60px;
+    transform: rotate(90deg);
+}
+
+.saba, .skylah, .stan {
+    padding: 50px 0 0 0;
+}
+
+.saba p, .skylah p, .stan p {
+    margin: 50px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto;
+    color: #989898;
+}
+
+footer a {
+    color: #989898;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para pantallas mayores a 500px */
+
+@media screen and (min-width: 500px){
+    .profiles {
+        width: 400px;
+        grid-template-columns: repeat(2, 170px);
+    }
+
+    figure p {
+        left: 80px;
+    }
+}
+
+
+/* Estilos para pantallas mayores a 700px */
+
+@media screen and (min-width: 700px){
+
+    .information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 570px;
+    }
+
+    .information .title {
+        width: 40%;
+    }
+
+    .information .info {
+        width: 40%;
+    }
+
+    .profiles {
+        width: 600px;
+        height: 600px;
+        grid-template-columns: repeat(3, 140px);
+    }
+
+    .skylah, .stan {
+        padding: 0;
+    }
+
+    .griff {
+        padding: 50px 0 0 0;
+    }
+    
+    .skylah p, .stan p {
+        margin: 0 0 0 0;
+    }
+
+    .griff p {
+        margin: 50px 0px;
+    }
+
+    figure p {
+        left: 60px;
+    }
+}
